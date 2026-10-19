@@ -727,32 +727,53 @@ h1, h2, h3, h4 {
 }
 
 /* ═══════════════════════════════════════
+ /* ═══════════════════════════════════════
    Responsive
    ═══════════════════════════════════════ */
 @media (max-width: 768px) {
+  /* منو */
+  .navbar {
+    padding: 12px 16px;
+  }
   .navbar-links { display: none; }
   .navbar-toggle { display: block; }
   .navbar-mobile { display: block; }
-  
-  .hero-title { font-size: 32px; }
-  .hero-subtitle { font-size: 18px; }
-  .hero-avatar { width: 110px; height: 110px; font-size: 48px; }
-  
-  .section { padding: 60px 0; }
-  .section-title { font-size: 28px; }
-  .section-subtitle { font-size: 16px; }
-  
-  .projects-grid { grid-template-columns: 1fr; }
-}
-.project-link-primary {
-  background: var(--gradient-gold);
-  color: var(--bg);
-  box-shadow: 0 0 20px var(--primary-glow);
-}
+  .navbar-logo { width: 40px; height: 40px; }
+  .navbar-brand-text { font-size: 18px; }
 
-.project-link-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 30px var(--primary-glow);
+  /* بخش هیرو (Hero) */
+  .hero { padding: 100px 16px 40px; }
+  .hero-title { font-size: 28px; line-height: 1.4; }
+  .hero-subtitle { font-size: 16px; }
+  .hero-avatar { width: 140px; height: 140px; margin-bottom: 20px; }
+  .hero-description { font-size: 13px; line-height: 1.8; margin-bottom: 30px; }
+  .hero-buttons { gap: 12px; flex-direction: column; width: 100%; }
+  .btn { width: 100%; justify-content: center; }
+
+  /* بخش‌های اصلی */
+  .section { padding: 50px 0; }
+  .section-title { font-size: 24px; }
+  .section-subtitle { font-size: 14px; margin-bottom: 30px; }
+  .container { padding: 0 16px; }
+
+  /* درباره من */
+  .about-grid { grid-template-columns: 1fr; gap: 16px; }
+  .about-card { padding: 24px 16px; }
+
+  /* مهارت‌ها */
+  .skills-grid { grid-template-columns: 1fr; gap: 16px; }
+  .skill-category { padding: 20px; }
+
+  /* پروژه‌ها */
+  .projects-grid { grid-template-columns: 1fr; gap: 20px; }
+  .project-image { height: 180px; }
+  .project-content { padding: 16px; }
+  .project-title { font-size: 18px; }
+  .project-description { font-size: 13px; }
+
+  /* تماس */
+  .contact-grid { grid-template-columns: 1fr; gap: 16px; }
+  .contact-card { padding: 20px 16px; }
 }
 /* ═══════════════════════════════════════
  /* ═══════════════════════════════════════

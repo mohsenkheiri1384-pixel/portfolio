@@ -5,6 +5,7 @@ import {
   FiGithub,
   FiSend,
   FiExternalLink,
+  FiPhone,
 } from "react-icons/fi";
 import { config } from "../data/config";
 import { skills } from "../data/skills";
@@ -287,6 +288,13 @@ export default function Home() {
               </div>
               <h3>تلگرام</h3>
               <p>@im_mohse_n</p>
+            </a>
+            <a href={`tel:${config.contact.phone}`} className="contact-card">
+              <div className="contact-icon">
+                <FiPhone />
+              </div>
+              <h3>شماره تماس</h3>
+              <p>{config.contact.phone}</p>
             </a>
           </div>
         </div>
