@@ -69,7 +69,7 @@ export default function ShootingStars() {
       setTimeout(() => {
         setStars((prev) => prev.filter((s) => s.id !== id))
       }, (duration + delay) * 1000 + 500)
-    }, 10000)   // هر 10 ثانیه یه شهاب‌سنگ
+    }, 15000)   // هر 15 ثانیه یه شهاب‌سنگ
 
     return () => clearInterval(interval)
   }, [])
