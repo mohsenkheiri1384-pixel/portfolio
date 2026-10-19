@@ -289,13 +289,6 @@ export default function Home() {
               <h3>تلگرام</h3>
               <p>@im_mohse_n</p>
             </a>
-            <a href={`tel:${config.contact.phone}`} className="contact-card">
-              <div className="contact-icon">
-                <FiPhone />
-              </div>
-              <h3>شماره تماس</h3>
-              <p>{config.contact.phone}</p>
-            </a>
           </div>
         </div>
       </section>
