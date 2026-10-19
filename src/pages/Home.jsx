@@ -5,7 +5,6 @@ import {
   FiGithub,
   FiSend,
   FiExternalLink,
-  FiPhone,
 } from "react-icons/fi";
 import { config } from "../data/config";
 import { skills } from "../data/skills";
